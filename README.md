@@ -1,4 +1,4 @@
-# pagamento-simplificado-api
+# Pagamento-simplificado-api
 
 Este projeto é uma API construída usando **Java, Spring, PostgreSQL.** 
 
