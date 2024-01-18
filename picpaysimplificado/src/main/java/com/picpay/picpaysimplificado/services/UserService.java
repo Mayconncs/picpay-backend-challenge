@@ -1,6 +1,7 @@
 package com.picpay.picpaysimplificado.services;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,6 +46,10 @@ public class UserService {
 
         User user = optionalUser.get();
         return user;
+    }
+
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
     }
 
     public User saveUser(User user) {
