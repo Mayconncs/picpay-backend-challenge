@@ -5,6 +5,35 @@ Este projeto é uma API construída usando **Java, Spring, PostgreSQL.**
 ## API Endpoints
 A API contém os seguintes endpoints:
 
+**GET USERS**
+```markdown
+GET /users - busca todos os usuários
+```
+```json
+[
+  {
+    "id": 1,
+    "firstName": "Jorge",
+    "lastName": "Reis Lima",
+    "identity": "24644312954",
+    "email": "jorgereis@gmail.com",
+    "password": "45642465",
+    "balance": 1133.70,
+    "userType": "COMUM"
+  },
+  {
+    "id": 2,
+    "firstName": "Carlos",
+    "lastName": "dos Santos",
+    "identity": "45713454678",
+    "email": "carlossantos@gmail.com",
+    "password": "5034504545",
+    "balance": 2441.60,
+    "userType": "COMUM"
+  }
+]
+```
+
 **POST USERS**
 ```markdown
 POST /users - Cadastra um novo usuário
@@ -17,7 +46,7 @@ POST /users - Cadastra um novo usuário
 	"email":"jorgereis@gmail.com",
 	"password":"45642465",
 	"userType":"COMUM",
-	"balance":1000  
+	"balance":1268.0  
 }
 ```
 
@@ -29,9 +58,9 @@ POST /transactions -Cadastra uma nova Transação entre usuários (COMUM para CO
 ```json
 
 {
-  "value": 100.0,
-  "payer": 9,
-  "payee": 1
+  "value": 134.30,
+  "payer": 1,
+  "payee": 2
 }
 ```
 
